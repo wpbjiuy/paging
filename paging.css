@@ -1,0 +1,85 @@
+.jiuy-paging{
+	height:40px;
+	line-height: 40px;
+	overflow: hidden;
+	zoom:1;
+}
+.jiuy-paging *{
+	height: inherit;
+	line-height: inherit;
+	display: block;
+}
+.jiuy-paging > *{
+	float:left;
+}
+.jiuy-paging .btn{
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+}
+.jiuy-paging .p-n{
+	padding:0 8px;
+	background-color:#ccc;
+	color:#000;
+	text-shadow: 1px 1px 1px #fff;
+}
+.jiuy-paging .p-n:active{
+	background-color: #aaa; 
+}
+.jiuy-paging .p-n.disabled{
+	background-color: #eee;
+	color:#999; 
+}
+.jiuy-paging .page-box{
+	padding:0;
+	margin:0 5px;
+	overflow: hidden;
+	zoom:1;
+}
+.jiuy-paging .page-box .btn{
+	border:1px solid #eee;
+	width:38px;
+	height:38px;
+	line-height: 38px;
+	float:left;
+	margin-left:-1px;
+	position: relative;
+	z-index: 1;
+}
+.jiuy-paging .page-box .btn:first-child{
+	margin-left:0;
+}
+.jiuy-paging .page-box .btn.to{}
+.jiuy-paging .page-box .btn.to:hover{
+	border-color:#fca;
+	z-index: 2;
+}
+.jiuy-paging .page-box .btn.active{
+	border-color:#faa;
+	z-index: 2;
+}
+
+.jiuy-paging .gopage-box{
+	float:right;
+	overflow: hidden;
+}
+.jiuy-paging .gopage-box input{
+	float:left;
+	margin: 0;
+	padding: 0 0 0 5px;
+	outline: none;
+	border: 1px solid #ddd;
+	height: 38px;
+	line-height: 38px;
+	width: 70px;
+	text-align: center;
+}
+.jiuy-paging .gopage-box .btn{
+	float:left;
+	padding: 0 12px;
+	background-color: #ccc;
+	text-shadow: 1px 1px 1px #fff;
+}
+.jiuy-paging .gopage-box .btn:active{
+	background-color: #aaa;
+}

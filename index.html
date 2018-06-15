@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>翻页</title>
+	<link rel="stylesheet" type="text/css" href="paging.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="paging.js"></script>
+</head>
+<body>
+	<div id="pagebox"></div>
+	<script type="text/javascript">
+		var paging = new Paging({
+			box:$('#pagebox'),
+			maxPg:15
+		}).run(25)
+
+		paging.callback = function(n){
+			console.log('page:'+n)
+		}
+
+		console.log(paging)
+	</script>
+</body>
+</html>
